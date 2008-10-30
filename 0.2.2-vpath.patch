@@ -1,0 +1,107 @@
+--- origsrc/cairo-compmgr-0.2.2/plugins/fade/Makefile.am	2008-09-21 16:58:41.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/fade/Makefile.am	2008-10-29 21:31:30.505988800 -0500
+@@ -1,8 +1,8 @@
+ ## File created by the gnome-build tools
+ 
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/freeze/Makefile.am	2008-09-21 16:59:18.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/freeze/Makefile.am	2008-10-29 21:31:33.271613800 -0500
+@@ -1,8 +1,8 @@
+ ## File created by the gnome-build tools
+ 
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/magnifier/Makefile.am	2008-09-21 16:59:30.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/magnifier/Makefile.am	2008-10-29 21:31:38.646613800 -0500
+@@ -1,8 +1,8 @@
+ ## File created by the gnome-build tools
+ 
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/menu-animation/Makefile.am	2008-09-21 16:59:43.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/menu-animation/Makefile.am	2008-10-29 21:31:41.677863800 -0500
+@@ -1,8 +1,8 @@
+ ## File created by the gnome-build tools
+ 
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/mosaic/Makefile.am	2008-09-21 16:59:56.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/mosaic/Makefile.am	2008-10-29 21:31:44.927863800 -0500
+@@ -1,6 +1,6 @@
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/opacity/Makefile.am	2008-09-21 17:00:06.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/opacity/Makefile.am	2008-10-29 21:31:47.443488800 -0500
+@@ -1,8 +1,8 @@
+ ## File created by the gnome-build tools
+ 
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/plugins/perf/Makefile.am	2008-09-21 17:00:17.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/perf/Makefile.am	2008-10-29 21:31:51.146613800 -0500
+@@ -1,6 +1,6 @@
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_PIXMAP_DIR=\""$(datadir)/pixmaps/cairo-compmgr"\" \
+--- origsrc/cairo-compmgr-0.2.2/plugins/shadow/Makefile.am	2008-09-21 17:12:24.000000000 -0500
++++ src/cairo-compmgr-0.2.2/plugins/shadow/Makefile.am	2008-10-29 21:31:54.474738800 -0500
+@@ -1,6 +1,6 @@
+ INCLUDES = \
+-	-I../../src \
+-	-I../../lib \
++	-I$(top_srcdir)/src \
++	-I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" $(CAIRO_COMPMGR_CFLAGS)
+--- origsrc/cairo-compmgr-0.2.2/src/Makefile.am	2008-09-21 17:17:57.000000000 -0500
++++ src/cairo-compmgr-0.2.2/src/Makefile.am	2008-10-29 21:28:38.396613800 -0500
+@@ -1,5 +1,5 @@
+ INCLUDES = \
+-    -I../lib \
++    -I$(top_srcdir)/lib \
+ 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+ 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+ 	-DPACKAGE_PLUGIN_DIR=\""$(libdir)/cairo-compmgr"\" \

@@ -1,0 +1,11 @@
+--- origsrc/cairo-compmgr-0.2.2/Makefile.am	2008-09-21 16:22:20.000000000 -0500
++++ src/cairo-compmgr-0.2.2/Makefile.am	2008-10-29 22:44:32.630626600 -0500
+@@ -1,7 +1,6 @@
+ SUBDIRS = lib src plugins data po
+ 
+-cairo_compmgrdocdir = ${prefix}/doc/cairo-compmgr
+-cairo_compmgrdoc_DATA = \
++doc_DATA = \
+ 	README\
+ 	COPYING\
+ 	AUTHORS\

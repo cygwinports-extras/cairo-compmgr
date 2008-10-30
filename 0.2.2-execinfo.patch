@@ -1,0 +1,26 @@
+--- origsrc/cairo-compmgr-0.2.2/src/ccm-debug.c	2008-09-13 05:22:33.000000000 -0500
++++ src/cairo-compmgr-0.2.2/src/ccm-debug.c	2008-10-29 21:30:25.380988800 -0500
+@@ -21,7 +21,9 @@
+  */
+ 
+ #include <unistd.h>
++#ifndef __CYGWIN__
+ #include <execinfo.h>
++#endif
+ #include <glib.h>
+ 
+ #include "ccm-debug.h"
+@@ -133,6 +135,7 @@
+ void
+ ccm_log_print_backtrace()
+ {
++#ifndef __CYGWIN__
+ 	void * array[10];
+     int size;
+     char ** strings;
+@@ -145,4 +148,5 @@
+         ccm_log(strings[i]);
+     
+ 	g_free (strings);
++#endif
+ }

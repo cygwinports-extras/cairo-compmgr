@@ -1,0 +1,11 @@
+--- origsrc/cairo-compmgr-0.2.2/lib/Makefile.am	2008-09-21 17:17:23.000000000 -0500
++++ src/cairo-compmgr-0.2.2/lib/Makefile.am	2008-10-29 21:26:40.271613800 -0500
+@@ -18,7 +18,7 @@
+ 	ccm-timeout-pool.c \
+ 	ccm-timeout-pool.h
+ 
+-libcairo_compmgr_la_LDFLAGS = -version-info @LIBS_VERSION@ 
++libcairo_compmgr_la_LDFLAGS = -version-info @LIBS_VERSION@ -no-undefined
+ 
+ libcairo_compmgr_la_LIBADD = $(CAIRO_COMPMGR_LIBS) $(M_LIBS)
+ 

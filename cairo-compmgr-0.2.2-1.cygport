@@ -1,0 +1,14 @@
+inherit gnome2
+
+DESCRIPTION="Cairo Composite Manager"
+HOMEPAGE="http://cairo-compmgr.tuxfamily.org/"
+SRC_URI="http://download.tuxfamily.org/ccm/cairo-compmgr/${P}.tar.gz"
+PATCH_URI="
+	0.2.2-docdir.patch
+	0.2.2-execinfo.patch
+	0.2.2-no-undefined.patch
+	0.2.2-vpath.patch
+"
+
+CYGCONF_ARGS="--disable-debug"
+MAKEOPTS+=" LIBS='-Wl,\$(top_builddir)/src/libcairo_compmgr_plugin.a'"
